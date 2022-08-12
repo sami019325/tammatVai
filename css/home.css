@@ -1,0 +1,11 @@
+body {
+    margin: 0 auto;
+}
+
+#HeaderContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/png-bg/Rectangle\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
