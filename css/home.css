@@ -35,9 +35,8 @@ body {
     position: relative;
     margin-right: 0;
     margin-left: auto;
-    width: 40%;
+    width: 600px;
     right: 0;
-    /* background-color: aquamarine; */
     height: 100vh;
 }
 
@@ -53,10 +52,10 @@ body {
 }
 
 .titleTextItalic {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Italianno', cursive;
     font-style: normal;
-    font-weight: 900;
-    font-size: 46px;
+    font-weight: 400;
+    font-size: 76px;
 }
 
 /* -------------------- other text ------------------------------ */
@@ -91,12 +90,12 @@ body {
 
 }
 
-titleOtherText {
+.titleOtherText {
 
-    font-family: 'Jolly Lodger';
+    font-family: 'Jolly Lodger', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 58px;
 
 }
