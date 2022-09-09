@@ -1,5 +1,26 @@
 body {
     margin: 0;
+    background: #1D1D1D;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 /* ============================== header section ================= */
@@ -54,8 +75,8 @@ body {
 .titleTextItalic {
     font-family: 'Italianno', cursive;
     font-style: normal;
-    font-weight: 400;
-    font-size: 76px;
+    font-weight: 900;
+    font-size: 96px;
 }
 
 /* -------------------- other text ------------------------------ */
@@ -92,10 +113,182 @@ body {
 
 .titleOtherText {
 
-    font-family: 'Jolly Lodger', cursive;
-    font-style: normal;
+    /* font-family: 'Jolly Lodger', cursive; */
+    /* font-style: normal; */
     font-weight: 400;
-    font-size: 32px;
+    /* font-size: 32px; */
     line-height: 58px;
 
+}
+
+.Contract_me-Btn-inner {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: rgb(193, 190, 190);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 17px;
+}
+
+.Contract_me-Btn-inner:hover {
+    background: #0235d9c7;
+    color: #fff;
+    font-size: large;
+}
+
+.Contract_me-Btn {
+    padding: 1px;
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: relative;
+    background-size: 400%;
+    width: 90%;
+    height: 78px;
+    margin: auto;
+    margin-top: 10px;
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 17px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* ============================================== main section ========================== */
+.Upcomming-holder {
+    background: linear-gradient(98.82deg, #012437 1.52%, #003F51 44.52%, #7F8E93 98.58%);
+    border-radius: 49px;
+    /* margin-bottom: 20px; */
+}
+
+.countdown {
+    width: 90%;
+    /* background: rgba(255, 255, 255, 0.26); */
+    border-radius: 17px;
+}
+
+.radius17 {
+    border-radius: 17px 0 0 17px;
+}
+
+/* and (min-width: 768) and  */
+@media screen and (max-width: 576px) {
+    .radius17 {
+        border-radius: 17px 17px 0 0;
+        background-color: #D9F99D;
+    }
+
+}
+
+@media screen and (min-width: 988px) {
+    .radius17 {
+        background: none;
+    }
+
+}
+
+.See-more-button {
+    margin: 15px;
+    color: #00ffd5;
+    cursor: pointer;
+    padding: 4px 15px;
+    border-radius: 17px;
+    font-size: 11px;
+    /* background-color: #0d0e0b; */
+}
+
+.See-more-button:hover {
+    margin: 10px;
+    background-color: #0d1401;
+    color: rgb(238, 237, 237);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+/* ================================================================== notice Board ============================ */
+
+.noticeBoard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.noticeBoard-inner {
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vh;
+    background: #7a00ff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.btn-of-notice {
+    width: 60px;
+    height: 60px;
+}
+
+.btn-of-notice:hover {
+    cursor: pointer;
+    background-color: rgba(147, 20, 201, 0.5);
+    border-radius: 50%;
+}
+
+.noticeBoard-content-area {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+
+
+
+.article {
+    position: sticky;
+    top: 160px;
+}
+
+.navNative {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+}
+
+.new_cover {
+    height: 60vh;
+    overflow-y: scroll;
+    padding: 4px;
+}
+
+footer {
+    margin-top: 40px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: #fff;
 }
